@@ -33,6 +33,27 @@ compiler.plugin('compilation', function (compilation) {
     cb()
   })
 })
+/**
+ * 实时更新
+ */
+// var spinner = ora('building for development...')
+// spinner.start()
+//
+// compiler.watch({ // watch options:
+//   aggregateTimeout: 300, // wait so long for more changes
+//   poll: false// use polling instead of native watchers
+//   // pass a number to set the polling interval
+// }, function (err, stats) {
+//   spinner.stop()
+//   if (err) throw err
+//   process.stdout.write(stats.toString({
+//         colors: true,
+//         modules: false,
+//         children: false,
+//         chunks: false,
+//         chunkModules: false
+//       }) + '\n')
+// });
 
 
 // proxy api requests
